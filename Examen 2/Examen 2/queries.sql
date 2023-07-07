@@ -1,7 +1,7 @@
-SELECT * FROM `user` LIMIT 50;
-
-TRUNCATE TABLE user_seq;
-TRUNCATE TABLE user;
-
-DROP TABLE user_seq;
-DROP TABLE user;
+CREATE TABLE usuarios (
+  id INT PRIMARY KEY,
+  nombre VARCHAR(50),
+  email VARCHAR(50),
+  contraseña VARCHAR(50),
+  CHECK (id <= 100)
+);
